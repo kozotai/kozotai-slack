@@ -38,7 +38,9 @@ KOZOTAI 管理画面の API 設定から取得してください。
 
 > **Note**: デプロイには [Cloudflare アカウント](https://dash.cloudflare.com/sign-up) が必要です（無料プランで動作します）。
 
-[Deploy to Cloudflare](https://deploy.workers.cloudflare.com/?url=REPO_URL)
+
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/kozotai/kozotai-slack)
+
 
 ボタンを押すと Cloudflare のセットアップ画面が開きます。Cloudflare アカウントへのログインと、このリポジトリのクローン先 GitHub アカウントの認可が求められます。
 
