@@ -2,3 +2,8 @@ node_modules
 .env
 .env.local
 .dev.vars
+.wrangler/
+.dev.vars*
+dist/
+*.log
+.DS_Store

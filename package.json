@@ -1,7 +1,7 @@
 {
   "name": "kozotai-slack",
   "version": "1.0.0",
-  "private": true,
+  "private": "false",
   "description": "Cloudflare Worker that forwards Slack events to KOZOTAI.",
   "scripts": {
     "dev": "wrangler dev",
@@ -14,7 +14,7 @@
     "slack"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "packageManager": "pnpm@10.33.0",
   "cloudflare": {
     "bindings": {
