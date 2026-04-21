@@ -1,0 +1,40 @@
+{
+  "name": "kozotai-slack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Worker that forwards Slack events to KOZOTAI.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "check": "tsc --noEmit",
+    "deploy": "wrangler deploy",
+    "cf-typegen": "wrangler types"
+  },
+  "keywords": [
+    "cloudflare-workers",
+    "slack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "cloudflare": {
+    "bindings": {
+      "SLACK_SIGNING_SECRET": {
+        "description": "Slack App の Basic Information で確認できる Signing Secret を設定してください。"
+      },
+      "SLACK_BOT_TOKEN": {
+        "description": "Slack App の Bot User OAuth Token (`xoxb-...`) を設定してください。"
+      },
+      "KOZOTAI_EVENT_API_KEY": {
+        "description": "KOZOTAI Event API に送信するための API key を設定してください。"
+      },
+      "KOZOTAI_EVENT_API_URL": {
+        "description": "通常は既定値の `https://api.kozotai.com/v1/event` のままで問題ありません。"
+      }
+    }
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260414.1",
+    "typescript": "^6.0.2",
+    "wrangler": "^4.82.2"
+  }
+}

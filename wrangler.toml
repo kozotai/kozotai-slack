@@ -1,0 +1,14 @@
+name = "kozotai-slack"
+main = "src/index.ts"
+compatibility_date = "2026-04-21"
+
+# Required secrets:
+#   wrangler secret put SLACK_SIGNING_SECRET
+#   wrangler secret put SLACK_BOT_TOKEN
+#   wrangler secret put KOZOTAI_EVENT_API_KEY
+#
+# Optional local development:
+#   .dev.vars に同名の環境変数を定義
+
+[vars]
+KOZOTAI_EVENT_API_URL = "https://api.kozotai.com/v1/event"
